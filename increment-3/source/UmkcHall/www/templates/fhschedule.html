@@ -1,0 +1,78 @@
+<ion-view title="FH-Schedule your Appointment" id="page7">
+  <ion-content padding="true" >
+    <ion-content ng-controller="fhscheduleCtrl">
+
+      <label class="item item-input">
+        <span class="input-label">Select Date</span>
+        <input type="date" ng-model="date">
+      </label>
+
+      <table>
+
+        <div style="padding-top: 100px; padding-bottom:20px;">
+
+          <tr>
+           <ul id="menu">
+
+            <th> <li><button class="available" id="a8am" ng-click="a8am()">8:00 am</button></li>  </th>
+            <th> <li> <button class="available" id="a9am" ng-click="a9am()">9:00 am</button>  </li> </th>
+            <th> <li> <button class="available" id="a10am" ng-click="a10am()">10:00 am</button> </li> </th>
+            <th><li>  <button class="available" id="a11am" ng-click="a11am()">11:00 am</button> </li> </th>
+
+             </ul>
+          </tr>
+          <!--     <tr>
+           <ul id="menu">
+
+                 <th><li><button class="available" id="a12pm" ng-click="a12pm()">12:00 pm</button></li></th>
+               <th>   <li><button class="available" id="a1pm" ng-click="a1pm()">1:00 pm</button></li></th>
+               <th>  <li><button class="available" id="a2pm" ng-click="a2pm()">2:00 pm</button></li></th>
+               <th>  <li><button class="available" id="a3pm" ng-click="a3pm()">3:00 pm</button></li></th>
+
+               </ul>
+
+            </tr>
+
+            <tr>
+               <ul id="menu">
+
+                 <th>   <li><button class="available" id="a4pm" ng-click="a4pm()">4:00 pm</button></li></th>
+                 <th>  <li><button class="available" id="a5pm" ng-click="a5pm()">5:00 pm</button></li></th>
+                 <th>  <li><button class="available" id="a6pm" ng-click="a6pm()">6:00 pm</button></li></th>
+                 <th>   <li><button class="available" id="a7pm" ng-click="a7pm()">7:00 pm</button></li></th>
+
+               </ul>
+
+             </tr>
+     -->
+        </div>
+
+      </table>
+
+      <button class="button button-outline icon-right ion-chevron-right button-balanced" ng-click="confirmslot()">Confirm Time Slot</button>
+
+
+
+    </ion-content>
+
+
+
+
+    <!--    <label class="item item-input">
+          <span class="input-label">Date</span>
+          <input type="date">
+        </label>
+
+        <button class="button button-balanced" style="align-content: center" ng-click="openDirections()" >
+          Get Direction
+        </button>
+
+        <button class="button button-balanced" style="align-content: center" ng-click="$cordovaDatePicker()" >
+          ComposeEmail
+        </button>
+
+
+
+      </ion-content>
+      -->
+</ion-view>
