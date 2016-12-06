@@ -1,52 +1,73 @@
-<ion-view cache-view="false" view-title="UMKC HallReservation" name="login-view"  class="pane">
-  <ion-header-bar class="bar-balanced">
-    <h1 class="title">UMKC HallReservation</h1>
-  </ion-header-bar>
-  <ion-content padding="true">
 
-    <style type="text/css">
-      .pane{
-        background:url('https://wallpaperscraft.com/image/drops_water_white_green_55225_1920x1080.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-      }
-    </style>
-    <div>
-    <h4 class="form-signin-heading" style="color:whitesmoke">Please Sign in</h4>
-    <div class="list list-inset">
-      <label class="item item-input">
-        <input type="text" id="username" class="form-control" placeholder="Username" required autofocus ng-model="username">
-      </label>
-      <label class="item item-input">
-        <input type="password" id="password" class="form-control" placeholder="Password" required autofocus ng-model="password">
-      </label>
+<!DOCTYPE html>
+<html>
+<head class="pane">
+  <!-- CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+
+  <style type="text/css">
+    .pane{
+      background: url(../img/kc.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+
+
+</head>
+<body>
+<div class="register">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header"><h1>Login</h1></div>
+
+
+  <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+
+    <!-- EMAIL -->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+      <label>Email*</label>
+      <input type="email" name="email" class="form-control" ng-model="email" placeholder="example@mail.umkc.edu" required pattern="[a-z0-9._%+-]+@mail.umkc.edu">
+      <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Email Address required.</p>
     </div>
-    <button class="button button-block button-positive padding-horizontal" ng_click="login(username,password)" type="submit">Login</button>
 
-<br><br>
-
-      <h4 style="color:red">Not Registered?<span style="padding: 0 20px">&nbsp;</span>
-        <a href="#register" class="balanced" >Create an Account!!!</a>
-      </h4>
-
-      <div id="x"></div><br>
-
-  <div class="login">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
+    <!--Password-->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+      <label>Password*</label>
+      <input type="password" name="password" class="form-control" ng-model="password" placeholder="enter password" ng-minlength="3" ng-maxlength="10" required>
+      <!--<p ng-show="userForm.password.$error.minlength" class="help-block">Password is too short.</p>-->
+      <!--<p ng-show="userForm.password.$error.maxlength" class="help-block">Password is too long.</p>-->
+    </div>
 
 
 
+    <button type="submit" class="button button-block button-royal padding-horizontal" ng-disabled="userForm.$invalid"  ng-click="login(email,password)">SignIn</button>
 
+<br>
+
+    <h4 style="color:red">Not Registered?<span style="padding: 0 70px">&nbsp;</span>
+      <a href="#register" class="en" >Create an Account!!!</a>
+    </h4>
+
+    <div id="x"></div><br>
+
+    <div class="login">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+
+
+  </form>
 </div>
-  </ion-content>
-</ion-view>
+</body>
+</html>

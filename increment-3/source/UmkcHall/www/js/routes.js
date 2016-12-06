@@ -28,13 +28,6 @@ angular.module('starter.routes', ['ngResource'])
 
 
 
-   /*      .state('home', {
-           url: '/home',
-           templateUrl: 'templates/home.html',
-           controller: 'HomeCtrl'
-
-          })
-*/
 
           .state('menu', {
             url: '/menu',
@@ -82,6 +75,63 @@ angular.module('starter.routes', ['ngResource'])
 
           })
 
+          .state('confirmfh', {
+            url: '/confirmfh',
+            templateUrl: 'templates/confirmfh.html',
+            controller: 'confirmfhCtrl'
+          })
+
+
+
+
+          .state('mnl', {
+            url: '/mnl',
+            templateUrl: 'templates/mnl.html',
+            controller: 'mnlCtrl'
+
+          })
+
+
+
+          .state('mnlschedule', {
+            url: '/mnlschedule',
+            templateUrl: 'templates/mnlschedule.html',
+            controller: 'mnlscheduleCtrl'
+
+          })
+
+          .state('confirmmnl', {
+            url: '/confirmmnl',
+            templateUrl: 'templates/confirmmnl.html',
+            controller: 'confirmmnlCtrl'
+          })
+
+
+
+
+          .state('rh', {
+            url: '/rh',
+            templateUrl: 'templates/rh.html',
+            controller: 'rhCtrl'
+
+          })
+
+
+
+          .state('rhschedule', {
+            url: '/rhschedule',
+            templateUrl: 'templates/rhschedule.html',
+            controller: 'rhscheduleCtrl'
+
+          })
+
+          .state('confirmrh', {
+            url: '/confirmrh',
+            templateUrl: 'templates/confirmrh.html',
+            controller: 'confirmrhCtrl'
+          })
+
+
           .state('menu.update', {
             url: '/update',
             views: {
@@ -98,6 +148,16 @@ angular.module('starter.routes', ['ngResource'])
               'side-menu21': {
                 templateUrl: 'templates/maps.html',
                 controller: 'MapsCtrl'
+              }
+            }
+          })
+
+          .state('menu.bookings', {
+            url: '/bookings',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/bookings.html',
+                controller: 'bookingsCtrl'
               }
             }
           })

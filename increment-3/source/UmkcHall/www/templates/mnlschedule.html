@@ -1,8 +1,8 @@
-<ion-view title="FH-Schedule your Appointment" id="page7" cache-view="false" class="pane">
-  <ion-header-bar >
-    <h1 class="title">Schedule your Room</h1>
+<ion-view title="MNL-Schedule your Appointment" id="page7" cache-view="false" class="pane">
+  <ion-header-bar class="bar-balanced">
+    <h1 class="title">UMKC HallReservation</h1>
   </ion-header-bar>
-  <ion-content ng-style="" overflow-scroll="true" padding="true" class="has-header" ng-controller="fhscheduleCtrl">
+  <ion-content ng-style="" overflow-scroll="true" padding="true" class="has-header" ng-controller="mnlscheduleCtrl">
 
     <style type="text/css">
       .pane{
@@ -21,38 +21,22 @@
         max-width: 650px;
         float: none;
       }
-      .button2
-      {	background-color: purple;
-        border-radius: 8px;
-        border: none;
-        color: white;
-        padding: 10px 230px;
-        text-align: center;
-        text-decoration: none;
-        font-size :32px;
-        margin: 5px;
-        cursor: pointer;
-        display: inline-block;
-        transition: all 0.5s;
-      }
-      .button2:hover
-      {	background-color: white;
-        color: purple;
-        border-radius: 40%;
+      .select{
+        font-size:32px;
       }
 
 
     </style>
 
 
-    <div class="center" style="padding-top: 100px; padding-bottom:20px; color:black" >
-      <div class="pageCenter">
+    <div class="center" style="padding-top: 100px; padding-bottom:20px; color:black" > Select Date(DD/MM/YYY)
+
       <label class="item item-input">
         <span class="input-label">Select Date</span>
         <input type="date" id="date" ng-model="date">
       </label>
 
-
+      <div class="pageCenter">
 
         <table>
 
@@ -108,9 +92,8 @@
       <br>
       <br>
       <br>
-      <!--<button class="button button-outline icon-right ion-chevron-right button-balanced" ng-click="confirmslot(dd,mm,year,choice)">Confirm Time Slot</button>-->
       <div class="schedule">
-        <button class="button2" ng-click="checkvailability(date,choice)">Check Availability</button>
+        <button class="button button-block button-royal padding-horizontal" ng-click="checkvailability(date,choice)">Check Availability</button>
       </div>
     </div>
 
