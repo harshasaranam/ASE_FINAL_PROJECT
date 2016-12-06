@@ -1,113 +1,170 @@
-angular.module('app.routes', [])
+/**
+ * Created by nagar on 11/10/2016.
+ */
 
-.config(function($stateProvider, $urlRouterProvider) {
 
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
-  $stateProvider
-    
-  
+angular.module('starter.routes', ['ngResource'])
 
-      .state('menu.home', {
-    url: '/page1',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/home.html',
-        controller: 'homeCtrl'
-      }
-    }
-  })
 
-  .state('menu', {
-    url: '/side-menu21',
-    templateUrl: 'templates/menu.html',
-    controller: 'menuCtrl'
-  })
 
-  .state('login', {
-    url: '/page4',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
-  })
 
-  .state('menu.flarsheimHall460', {
-    url: '/page5',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/flarsheimHall460.html',
-        controller: 'flarsheimHall460Ctrl'
-      }
-    }
-  })
+      .config(function($stateProvider, $urlRouterProvider) {
 
-  .state('mapToFh', {
-    url: '/page6',
-    templateUrl: 'templates/mapToFh.html',
-    controller: 'mapToFhCtrl'
-  })
+        $stateProvider
 
-  .state('menu.fHScheduleYourAppointment', {
-    url: '/page7',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/fHScheduleYourAppointment.html',
-        controller: 'fHScheduleYourAppointmentCtrl'
-      }
-    }
-  })
 
-  .state('menu.haagHall301', {
-    url: '/page8',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/haagHall301.html',
-        controller: 'haagHall301Ctrl'
-      }
-    }
-  })
+          .state('login', {
+            url: '/login',
+            templateUrl: 'templates/login.html',
+            controller: 'LoginCtrl'
+          })
 
-  .state('haagHallScheduleYourAppointment', {
-    url: '/page9',
-    templateUrl: 'templates/haagHallScheduleYourAppointment.html',
-    controller: 'haagHallScheduleYourAppointmentCtrl'
-  })
 
-  .state('mapToHaagHall', {
-    url: '/page10',
-    templateUrl: 'templates/mapToHaagHall.html',
-    controller: 'mapToHaagHallCtrl'
-  })
+          .state('register', {
+            url: '/register',
+            templateUrl: 'templates/register.html',
+            controller: 'RegisterCtrl'
+          })
 
-  .state('menu.mNLibrary351', {
-    url: '/page11',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/mNLibrary351.html',
-        controller: 'mNLibrary351Ctrl'
-      }
-    }
-  })
 
-  .state('menu.mNLScheduleYourAppointment', {
-    url: '/page12',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/mNLScheduleYourAppointment.html',
-        controller: 'mNLScheduleYourAppointmentCtrl'
-      }
-    }
-  })
 
-  .state('mapToMNL', {
-    url: '/page13',
-    templateUrl: 'templates/mapToMNL.html',
-    controller: 'mapToMNLCtrl'
-  })
 
-$urlRouterProvider.otherwise('/page4')
+          .state('menu', {
+            url: '/menu',
+            templateUrl: 'templates/menu.html',
+            controller: 'menuCtrl'
+          })
 
-  
 
-});
+          .state('menu.home', {
+            url: '/home',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/home.html',
+                controller: 'HomeCtrl'
+              }
+            }
+          })
+
+
+
+          .state('menu.about', {
+            url: '/about',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/about.html',
+                controller: 'AboutCtrl'
+              }
+            }
+          })
+
+
+          .state('fh', {
+            url: '/fh',
+            templateUrl: 'templates/fh.html',
+            controller: 'fhCtrl'
+
+          })
+
+
+
+          .state('fhschedule', {
+            url: '/fhschedule',
+            templateUrl: 'templates/fhschedule.html',
+            controller: 'fhscheduleCtrl'
+
+          })
+
+          .state('confirmfh', {
+            url: '/confirmfh',
+            templateUrl: 'templates/confirmfh.html',
+            controller: 'confirmfhCtrl'
+          })
+
+
+
+
+          .state('mnl', {
+            url: '/mnl',
+            templateUrl: 'templates/mnl.html',
+            controller: 'mnlCtrl'
+
+          })
+
+
+
+          .state('mnlschedule', {
+            url: '/mnlschedule',
+            templateUrl: 'templates/mnlschedule.html',
+            controller: 'mnlscheduleCtrl'
+
+          })
+
+          .state('confirmmnl', {
+            url: '/confirmmnl',
+            templateUrl: 'templates/confirmmnl.html',
+            controller: 'confirmmnlCtrl'
+          })
+
+
+
+
+          .state('rh', {
+            url: '/rh',
+            templateUrl: 'templates/rh.html',
+            controller: 'rhCtrl'
+
+          })
+
+
+
+          .state('rhschedule', {
+            url: '/rhschedule',
+            templateUrl: 'templates/rhschedule.html',
+            controller: 'rhscheduleCtrl'
+
+          })
+
+          .state('confirmrh', {
+            url: '/confirmrh',
+            templateUrl: 'templates/confirmrh.html',
+            controller: 'confirmrhCtrl'
+          })
+
+
+          .state('menu.update', {
+            url: '/update',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/update.html',
+                controller: 'UpdateCtrl'
+              }
+            }
+          })
+
+          .state('menu.maps', {
+            url: '/maps',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/maps.html',
+                controller: 'MapsCtrl'
+              }
+            }
+          })
+
+          .state('menu.bookings', {
+            url: '/bookings',
+            views: {
+              'side-menu21': {
+                templateUrl: 'templates/bookings.html',
+                controller: 'bookingsCtrl'
+              }
+            }
+          })
+
+
+
+
+
+        $urlRouterProvider.otherwise('/login');
+      });
