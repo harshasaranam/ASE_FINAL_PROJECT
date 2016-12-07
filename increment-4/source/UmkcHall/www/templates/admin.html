@@ -1,0 +1,22 @@
+<ion-view title="Booking History" id="page51" class="pane">
+  <ion-content padding="true" overflow-scroll="true" class="has-header">
+
+    <style type="text/css">
+      .pane{
+        background: url(../img/bb.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+    </style>
+
+    <button type="submit" class="button button-block button-royal padding-horizontal"  ng-click="logout()">logout</button>
+    <h1 style="color: violet"align="center">Rooms booked</h1>
+    <div data-ng-controller="adminCtrl" data-ng-init="getBooking1()">
+      <div align="center">
+        <h2 style="color:antiquewhite" ng-bind-html="myHTML"></h2>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

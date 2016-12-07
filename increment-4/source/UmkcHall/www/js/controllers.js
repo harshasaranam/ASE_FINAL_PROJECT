@@ -53,6 +53,7 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
       console.log($scope.pass1);
 
 
+
       $http({
         method: 'GET',
         url: 'https://api.mongolab.com/api/1/databases/umkchallreservaton/collections//userdata?apiKey=TyMceVeajhESTqinai_x0zrA6MCtM4PR',
@@ -86,6 +87,16 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
 
         }
       })
+    }
+    $scope.loginadmin=function(email,password){
+
+      if(email=="admin@mail.umkc.edu" && password=="admin"){
+
+        $state.go("admin");
+      }
+
+
+
     }
   })
 
@@ -159,6 +170,60 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
 
 
     }])
+
+
+
+.controller('adminCtrl', function($scope, $state, $http,$ionicViewService, $ionicHistory,$window, $httpParamSerializerJQLike,$ionicPlatform,$cordovaDatePicker) {
+
+
+  // .controller('adminCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+  $scope.logout= function () {
+    $state.go('login');
+  }
+
+      $scope.getBooking1= function () {
+
+        inside.getMethod();
+        $http({
+          method: 'GET',
+          url: 'https://api.mongolab.com/api/1/databases/umkchallreservaton/collections//timings?apiKey=TyMceVeajhESTqinai_x0zrA6MCtM4PR',
+
+          contentType: "application/json"
+        }).success(function (response) {
+          var list = response;
+          var donno = 0;
+          var count = 0;
+          $scope.myHTML = "";
+          for (i = 0; i < list.length; i++) {
+
+
+
+              console.log(list[i].date);
+              console.log(list[i].time);
+              // localStorage.setItem("date1", list[i].date);
+              // localStorage.setItem("post1", list[i].time);
+
+              var date2=list[i].date;
+              var time2=list[i].time;
+              var hall2=list[i].hall;
+              var sid2=list[i].studentid;
+              $scope.myHTML +="Time : "+time2+" <br> "+"Date : " +date2 + " <br>" + " Hall : " +hall2 + "<br> " + " Student_id : " +sid2 + " <br><br>" ;
+
+
+
+
+          }
+
+          console.log("inside block1" + count);
+
+        })
+
+      }
+
+
+    })
 
 
 
@@ -668,8 +733,9 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
 
             var date1=list[i].date;
             var time1=list[i].time;
+            var hall1=list[i].hall;
 
-            $scope.myHTML +="Time : "+time1+" <br> "+"Date : " +date1 + " " + "<br><br>";
+            $scope.myHTML +="Time : "+time1+" <br> "+"Date : " +date1 + "<br> " + " Hall : " +hall1 + " " + "   <br><br>";
 
 
 

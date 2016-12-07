@@ -59,6 +59,15 @@ angular.module('starter.routes', ['ngResource'])
           })
 
 
+
+          .state('admin', {
+            url: '/admin',
+            templateUrl: 'templates/admin.html',
+            controller: 'adminCtrl'
+
+          })
+
+
           .state('fh', {
             url: '/fh',
             templateUrl: 'templates/fh.html',
