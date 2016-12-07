@@ -8,9 +8,29 @@
         -moz-background-size: cover;
         background-size: cover;
       }
+      .button2
+      {	background-color: purple;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        padding: 15px 100px;
+        text-align: center;
+        text-decoration: none;
+        font-size :32px;
+        margin: 5px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s;
+      }
+      .button2:hover
+      {	background-color: cornflowerblue;
+        color: purple;
+        border-radius: 40%;
+      }
+
     </style>
 
-    <button type="submit" class="button button-block button-royal padding-horizontal"  ng-click="logout()">logout</button>
+    <button type="submit"  class="button2"  ng-click="logout()">logout</button>
     <h1 style="color: violet"align="center">Rooms booked</h1>
     <div data-ng-controller="adminCtrl" data-ng-init="getBooking1()">
       <div align="center">

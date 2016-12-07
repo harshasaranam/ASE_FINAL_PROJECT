@@ -209,7 +209,7 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
               var time2=list[i].time;
               var hall2=list[i].hall;
               var sid2=list[i].studentid;
-              $scope.myHTML +="Time : "+time2+" <br> "+"Date : " +date2 + " <br>" + " Hall : " +hall2 + "<br> " + " Student_id : " +sid2 + " <br><br>" ;
+              $scope.myHTML +=" Student_id : " +sid2 + " <br> "+" Time : "+time2+" <br> "+"Date : " +date2 + " <br>" + " Hall : " +hall2 + " <br><br>" ;
 
 
 
@@ -677,7 +677,7 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
   })
 })
 
-.controller('AboutCtrl', function($cordovaEmailComposer) {
+.controller('AboutCtrl', function($scope,$state,$cordovaEmailComposer) {
 
   $cordovaEmailComposer.isAvailable().then(function() {
     // is available
@@ -703,6 +703,10 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
   $cordovaEmailComposer.open(email).then(null, function () {
     // user cancelled email
   });
+
+
+
+
 })
 
 .controller('bookingsCtrl', function($scope, $state, $http,$ionicViewService, $ionicHistory,$window, $httpParamSerializerJQLike,$ionicPlatform,$cordovaDatePicker) {
@@ -758,22 +762,7 @@ angular.module('starter.controllers',['ngResource','ngCordova'])
       })
 
     }
-    $scope.videos = [];
 
-    $scope.youtubeParams = {
-      key: 'AIzaSyBg3LJIbYTZHMX6QfmP4ygowYa9HSTDsr8',
-      type: 'video',
-      maxResults: '5',
-      part: 'id,snippet',
-      q: 'power',
-      order: 'date',
 
-    }
 
-    $http.get('https://www.googleapis.com/youtube/v3/search', {params:$scope.youtubeParams}).success(function(response) {
-      angular.forEach(response.items, function (child) {
-        // console.log(child);
-      });
-
-    })
   })

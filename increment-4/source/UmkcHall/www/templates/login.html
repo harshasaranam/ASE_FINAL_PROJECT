@@ -37,14 +37,13 @@
     <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
       <label>Password*</label>
       <input type="password" name="password" class="form-control" ng-model="password" placeholder="enter password" ng-minlength="3" ng-maxlength="10" required>
-      <!--<p ng-show="userForm.password.$error.minlength" class="help-block">Password is too short.</p>-->
-      <!--<p ng-show="userForm.password.$error.maxlength" class="help-block">Password is too long.</p>-->
+
     </div>
 
 
 
-    <button type="submit" class="button button-block button-royal padding-horizontal"  ng-click="login(email,password)">SignIn</button>
-    <button type="submit" class="button button-block button-royal padding-horizontal" ng-click="loginadmin(email,password)">SignIn as Admin</button>
+    <button type="submit" class="button button-block button-royal padding-horizontal" ng-disabled="userForm.$invalid"  ng-click="login(email,password)">SignIn</button>
+    <button type="submit" class="button button-block button-royal padding-horizontal" ng-disabled="userForm.$invalid" ng-click="loginadmin(email,password)">SignIn as Admin</button>
 <br>
 
     <h4 style="color:red">Not Registered?<span style="padding: 0 70px">&nbsp;</span>
