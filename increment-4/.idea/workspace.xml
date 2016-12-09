@@ -23,18 +23,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1585">
-              <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+            <state relative-caret-position="958">
+              <caret line="603" column="0" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
               <folding>
-                <element signature="e#13415#14555#0" expanded="false" />
-                <element signature="e#14647#15359#0" expanded="false" />
-                <element signature="e#15472#16343#0" expanded="false" />
-                <element signature="e#16413#17073#0" expanded="false" />
-                <element signature="e#17147#17756#0" expanded="false" />
-                <element signature="e#17922#19194#0" expanded="false" />
+                <element signature="e#196#749#0" expanded="false" />
+                <element signature="e#873#2614#0" expanded="false" />
+                <element signature="e#2809#4015#0" expanded="false" />
+                <element signature="e#4597#6094#0" expanded="false" />
+                <element signature="e#6175#6295#0" expanded="false" />
+                <element signature="e#7116#9534#0" expanded="false" />
+                <element signature="e#9625#11467#0" expanded="false" />
+                <element signature="e#13526#15416#0" expanded="false" />
+                <element signature="e#15726#16866#0" expanded="false" />
+                <element signature="e#16958#17670#0" expanded="false" />
+                <element signature="e#17783#18654#0" expanded="false" />
+                <element signature="e#18724#19384#0" expanded="false" />
+                <element signature="e#19458#20067#0" expanded="false" />
+                <element signature="e#20233#21505#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,15 +51,35 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
+            <state relative-caret-position="1485">
               <caret line="45" column="118" selection-start-line="45" selection-start-column="118" selection-end-line="45" selection-end-column="118" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmrh.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/confirmrh.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmfh.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/confirmfh.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -105,9 +133,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/source/UmkcHall/www/templates/menu.html" />
         <option value="$PROJECT_DIR$/source/UmkcHall/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -151,8 +179,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +272,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="C:/UmkcHall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
@@ -267,17 +295,18 @@
       <updated>1481134459899</updated>
       <workItem from="1481134462101" duration="223000" />
       <workItem from="1481143507632" duration="2384000" />
+      <workItem from="1481252536913" duration="371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2607000" />
+    <option name="totallyTimeSpent" value="2978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -311,8 +340,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js</url>
-          <line>573</line>
-          <properties />
+          <line>661</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -322,15 +350,94 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding>
+            <element signature="e#196#749#0" expanded="false" />
+            <element signature="e#873#2614#0" expanded="false" />
+            <element signature="e#2809#4015#0" expanded="false" />
+            <element signature="e#4597#6094#0" expanded="false" />
+            <element signature="e#6175#6295#0" expanded="false" />
+            <element signature="e#7116#9534#0" expanded="false" />
+            <element signature="e#9625#11467#0" expanded="false" />
+            <element signature="e#13526#15416#0" expanded="false" />
+            <element signature="e#15726#16866#0" expanded="false" />
+            <element signature="e#16958#17670#0" expanded="false" />
+            <element signature="e#17783#18654#0" expanded="false" />
+            <element signature="e#18724#19384#0" expanded="false" />
+            <element signature="e#19458#20067#0" expanded="false" />
+            <element signature="e#20233#21505#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="45" column="118" selection-start-line="45" selection-start-column="118" selection-end-line="45" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#13415#14555#0" expanded="false" />
-            <element signature="e#14647#15359#0" expanded="false" />
-            <element signature="e#15472#16343#0" expanded="false" />
-            <element signature="e#16413#17073#0" expanded="false" />
-            <element signature="e#17147#17756#0" expanded="false" />
-            <element signature="e#17922#19194#0" expanded="false" />
+            <element signature="e#196#749#0" expanded="false" />
+            <element signature="e#873#2614#0" expanded="false" />
+            <element signature="e#2809#4015#0" expanded="false" />
+            <element signature="e#4597#6094#0" expanded="false" />
+            <element signature="e#6175#6295#0" expanded="false" />
+            <element signature="e#7116#9534#0" expanded="false" />
+            <element signature="e#9625#11467#0" expanded="false" />
+            <element signature="e#13526#15416#0" expanded="false" />
+            <element signature="e#15726#16866#0" expanded="false" />
+            <element signature="e#16958#17670#0" expanded="false" />
+            <element signature="e#17783#18654#0" expanded="false" />
+            <element signature="e#18724#19384#0" expanded="false" />
+            <element signature="e#19458#20067#0" expanded="false" />
+            <element signature="e#20233#21505#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -391,24 +498,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1585">
-          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
-          <folding>
-            <element signature="e#13415#14555#0" expanded="false" />
-            <element signature="e#14647#15359#0" expanded="false" />
-            <element signature="e#15472#16343#0" expanded="false" />
-            <element signature="e#16413#17073#0" expanded="false" />
-            <element signature="e#17147#17756#0" expanded="false" />
-            <element signature="e#17922#19194#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
+        <state relative-caret-position="1485">
           <caret line="45" column="118" selection-start-line="45" selection-start-column="118" selection-end-line="45" selection-end-column="118" />
           <folding />
         </state>
@@ -419,6 +511,45 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/confirmrh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/templates/confirmfh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/UmkcHall/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="958">
+          <caret line="603" column="0" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
+          <folding>
+            <element signature="e#196#749#0" expanded="false" />
+            <element signature="e#873#2614#0" expanded="false" />
+            <element signature="e#2809#4015#0" expanded="false" />
+            <element signature="e#4597#6094#0" expanded="false" />
+            <element signature="e#6175#6295#0" expanded="false" />
+            <element signature="e#7116#9534#0" expanded="false" />
+            <element signature="e#9625#11467#0" expanded="false" />
+            <element signature="e#13526#15416#0" expanded="false" />
+            <element signature="e#15726#16866#0" expanded="false" />
+            <element signature="e#16958#17670#0" expanded="false" />
+            <element signature="e#17783#18654#0" expanded="false" />
+            <element signature="e#18724#19384#0" expanded="false" />
+            <element signature="e#19458#20067#0" expanded="false" />
+            <element signature="e#20233#21505#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
